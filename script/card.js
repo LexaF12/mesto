@@ -1,7 +1,7 @@
 import { closePopupByEsc, openPopup } from './index.js';
 
 export default class Card {
-  constructor (data, selector) {
+  constructor(data, selector) {
     this._name = data.name;
     this._link = data.link;
     this._selector = selector;
@@ -14,7 +14,7 @@ export default class Card {
       .querySelector('.element')
       .cloneNode(true);
 
-    return cardElement;  
+    return cardElement;
   }
 
   _setData() {
@@ -25,14 +25,14 @@ export default class Card {
 
   _handleClickLike() {
     this._newCard.querySelector('.element__like')
-    .classList.toggle('element__like_active');
+      .classList.toggle('element__like_active');
   }
 
   _handleClickDelete() {
     this._newCard.remove();
   }
 
-  _handleClickOpen() {
+  _handleCardClick() {
     const popup = document.querySelector('.popup_view_full');
     openPopup(popup);
 
@@ -51,7 +51,7 @@ export default class Card {
     placeDeleteButton.addEventListener('click', () => this._handleClickDelete());
 
     const placeImage = this._newCard.querySelector('.element__image');
-    placeImage.addEventListener('click', () => this._handleClickOpen());
+    placeImage.addEventListener('click', () => this._handleCardClick());
   }
 
   createCard() {
