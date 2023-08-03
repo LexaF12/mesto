@@ -1,0 +1,17 @@
+.element__like {
+    background-image: url(../../../images/non_active.svg);
+    width: 22px;
+    height: 19px;
+    position: relative;
+    top: 5px;
+    right: 8px;
+    flex-shrink: 0;
+    cursor: pointer;
+    font: inherit;
+    background-color: transparent;
+    border: none;
+}
+
+.element__like:hover {
+    opacity: .5;
+}

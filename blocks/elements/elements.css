@@ -1,0 +1,15 @@
+.elements {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 282px);
+    color: #000;
+    gap: 20px 17px;
+    border-radius: 10px;
+  }
+  
+  @media (max-width:1279px) {
+    .elements {
+      align-content: center;
+      justify-content: center;
+    }
+  }

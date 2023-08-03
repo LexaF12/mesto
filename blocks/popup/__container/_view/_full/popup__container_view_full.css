@@ -1,0 +1,8 @@
+.popup__container_view_full {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, .1);
+    width: fit-content;
+  }

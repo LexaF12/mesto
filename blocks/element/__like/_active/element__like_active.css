@@ -1,0 +1,18 @@
+.element__like_active {
+    background-image: url(../../../../images/active_like.jpg);
+    width: 22px;
+    height: 19px;
+    position: relative;
+    top: 5px;
+    right: 8px;
+    flex-shrink: 0;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+}
+
+.element__like_active:hover {
+    opacity: .5;
+}
