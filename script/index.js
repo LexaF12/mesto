@@ -81,7 +81,7 @@ function submitCardForm(evt) {
   evt.preventDefault()
   const newPopupCard = { name: popupInputTitle.value, link: popupInputUrl.value }
   cardForm.reset()
-  validPopupCard._toggleButtonState()
+  validPopupCard.toggleButtonState()
   renderCard(newPopupCard)
   closePopup(popupCardElement)
 }
