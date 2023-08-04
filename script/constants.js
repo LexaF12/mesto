@@ -25,13 +25,18 @@ const initialCards = [
     }
 ];
 
-const VALIDATION_CONFIG = ({
-    form: '.popup__form',
+const config = ({
+    formElement: '.popup__form',
     inputSelector: '.popup__input',
-    formButtonSubmit: '.popup__submit',
+    submitButtonSelector: '.popup__submit',
     inactiveButtonClass: 'popup__submit_inactive',
     inputErrorClass: 'popup__input_type_error',
-    errorClass: 'popup__input-error_active'
+    errorClass: 'popup__input-error_active',
+    template: '#template-element',
 })
 
-export { initialCards, VALIDATION_CONFIG }
+const popupElement = document.querySelector('.popup_view_full') 
+const popupImage = document.querySelector('.popup__view-image') 
+const popupImageTitle = document.querySelector('.popup__caption')
+
+export { initialCards, config, popupElement, popupImage, popupImageTitle}
